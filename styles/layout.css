@@ -1,0 +1,28 @@
+#app {
+  display: grid;
+  grid-template-columns: 32.25% 67.75%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--shape-body);
+  color: var(--text-heading);
+
+  & .icon-festival{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+  }
+
+  & .logo {
+    margin-bottom: .25rem;
+  }
+
+  & h2 {
+    font: var(--text-md);
+  }
+}
