@@ -5,24 +5,42 @@
   overflow: hidden;
 }
 
-
 aside {
-  display: flex;
-  flex-direction: column;
   background-color: var(--shape-body);
-  color: var(--text-heading);
+  padding: 2rem;
 
-  & .icon-festival{
-    width: 48px;
-    height: 48px;
-    margin-bottom: 1rem;
-  }
+  & .aside-container {
+    position: relative;
+    max-width: 31rem;
+    display: flex;
+    flex-direction: column;
 
-  & .logo {
-    margin-bottom: .25rem;
-  }
+    & header {
+      z-index: 2;
+      position: absolute;
+      margin: 2rem;
+      
+      & .icon-festival {
+        width: 40px;
+        height: 40px;
+      }
+    }
 
-  & h2 {
-    font: var(--text-md);
+
+    & .image-background {
+      margin-bottom: 0.25rem;
+      z-index: 1;
+      border-radius: 1.5rem;
+    }
+
+    & h2 {
+      margin-top: .25rem;
+      font: var(--text-md);
+      color: var(--text-heading);
+    }
   }
+}
+
+main {
+  background-color: var(--shape-body);
 }

@@ -46,4 +46,7 @@
    --font-family-baloo: "Baloo 2", sans-serif;
    --heading-md: 700 1.75rem/auto var(--font-family-baloo);
    --heading-sm: 700 1.125rem/auto var(--font-family-baloo);
+
+   --font-leckerli-one-regular: "Leckerli One", sans-serif;
+   --font-logo: 400 2.5rem/auto var(--font-leckerli-one-regular);
 }
