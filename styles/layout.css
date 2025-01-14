@@ -3,6 +3,7 @@
   grid-template-columns: 32.25% 67.75%;
   height: 100vh;
   overflow: hidden;
+  background-color: var(--shape-body);
 }
 
 aside {
@@ -19,13 +20,12 @@ aside {
       z-index: 2;
       position: absolute;
       margin: 2rem;
-      
+
       & .icon-festival {
         width: 40px;
         height: 40px;
       }
     }
-
 
     & .image-background {
       margin-bottom: 0.25rem;
@@ -34,13 +34,20 @@ aside {
     }
 
     & h2 {
-      margin-top: .25rem;
-      font: var(--text-md);
+      margin-top: 0.25rem;
+      font: var(--text);
       color: var(--text-heading);
     }
   }
 }
 
 main {
-  background-color: var(--shape-body);
+  padding-top: 5rem;
+  max-width: 35rem;
+
+  & .main-container > h1 {
+    color: var(--text-heading);
+    font: var(--heading-md);
+    margin-bottom: 40px;
+  }
 }

@@ -1,0 +1,23 @@
+@import url(inputs.css);
+
+fieldset {
+  border: none;
+  display: grid;
+  gap: 1.5rem;
+
+  & legend {
+    color: var(--text-heading);
+    font: var(--heading-sm);
+  }
+}
+
+label {
+    color: var(--text-body);
+    font: var(--text-sm);
+}
+
+/* .about-event {
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 1rem;
+} */

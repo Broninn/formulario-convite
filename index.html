@@ -2,10 +2,10 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
@@ -28,7 +28,41 @@
           />
         </div>
       </aside>
-      <main></main>
+      <main>
+        <div class="main-container">
+          <h1>Crie seu convite</h1>
+          <form action="" method="post" enctype="multipart/form-data">
+            <fieldset class="about-event">
+              <div class="flex gap-12">
+                <img src="assets/icons/calendar.svg" alt="" />
+                <legend>Sobre o evento</legend>
+              </div>
+              <div class="input-wrapper">
+                <label for="event-name">Título</label>
+                <input
+                  type="text"
+                  name="event-name"
+                  id="event-name"
+                  placeholder="Nome do evento"
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="timestart">Início</label>
+                <input
+                  type="date"
+                  id="timestart"
+                  name="timestart"
+                  lang="pt-BR"
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="timeend">Fim</label>
+                <input type="date" id="timeend" name="timeend" lang="pt-BR" />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
     </div>
   </body>
 </html>

@@ -35,18 +35,27 @@
    --text-body: #C8CDD0;
    --text-heading: #F9F9F9;
 
-   --font-family-os: "Open-sans", sans-serif;
-   --text-md: 400 1rem/auto var(--font-family-os);
-   --text-md-sb: 600 1rem/auto var(--font-family-os);
-   --text-sm: 400 .875rem/auto var(--font-family-os);
-   --text-sm-sb: 600 .875rem/auto var(--font-family-os);
-   --text-xs: 400 .875rem/auto var(--font-family-os);
-   --text-xs-sb: 600 .0075rem/auto var(--font-family-os);
+   --font-family: "Open-sans", sans-serif;
+   --text: 400 1rem/1.5 var(--font-family);
+   --text-md-sb: 600 1rem/1.5 var(--font-family);
+   --text-sm: 400 .875rem/1.5 var(--font-family);
+   --text-sm-sb: 600 .875rem/1.5 var(--font-family);
+   --text-xs: 400 .875rem/1.5 var(--font-family);
+   --text-xs-sb: 600 .0075rem/1.5 var(--font-family);
 
    --font-family-baloo: "Baloo 2", sans-serif;
-   --heading-md: 700 1.75rem/auto var(--font-family-baloo);
-   --heading-sm: 700 1.125rem/auto var(--font-family-baloo);
+   --heading-md: 700 1.75rem/1.5 var(--font-family-baloo);
+   --heading-sm: 700 1.125rem/1.5 var(--font-family-baloo);
 
    --font-leckerli-one-regular: "Leckerli One", sans-serif;
-   --font-logo: 400 2.5rem/auto var(--font-leckerli-one-regular);
+   --font-logo: 400 2.5rem/1.5 var(--font-leckerli-one-regular);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.gap-12 {
+  gap: .75rem;
 }
