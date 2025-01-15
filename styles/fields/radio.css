@@ -1,0 +1,53 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper > label {
+  font-size: 1rem;
+  color: var(--text-heading);
+}
+
+.radio-wrapper {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.radio-inner {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  gap: 0.5rem;
+}
+
+.radio-inner img {
+  width: 20px;
+  height: 20px;
+}
+
+.radio-inner label {
+  font-size: 1rem;
+  color: var(--input-placeholder);
+}
+
+.radio-inner input[type="radio"] {
+  display: none;
+}
+
+.radio-inner input[type="radio"]:checked + img {
+  filter: brightness(1.5);
+}
+
+.radio-inner input[type="radio"]:checked + img + label {
+  color: var(--brand-light);
+}
+
+.radio-inner input[type="radio"]:checked + img + label + .radio-inner {
+  border-color: var(--brand-light);
+}
