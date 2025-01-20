@@ -16,10 +16,10 @@ input {
   margin-top: 0.75rem;
 }
 
-.about-event {
+/* .about-event {
   padding: 1rem;
   border-radius: .5rem;
-}
+} */
 
 .grid-container {
   display: grid;
@@ -31,3 +31,23 @@ input {
   grid-column: span 2;
 }
 
+#personalizacao {
+  & .input-wrapper {
+    margin-top: 1rem;
+    & .radio-wrapper {
+      display: flex;
+      justify-content: space-between;
+      & .radio-inner {
+        background-color: var(--shape-button);
+        border-radius: 50%;
+        padding: 0.375rem;
+
+        &:hover,
+        &:focus-within,
+        &:has(:checked) {
+          border: 1px solid var(--brand-light);
+        }
+      }
+    }
+  }
+}

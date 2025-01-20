@@ -51,3 +51,40 @@
 .radio-inner input[type="radio"]:checked + img + label + .radio-inner {
   border-color: var(--brand-light);
 }
+
+.radio-inner-theme {
+  margin-top: 1rem;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  gap: 0.5rem;
+
+  & input[type="radio"] {
+    display: none;
+  }
+
+  & .radio-inner-theme-wrapper {
+    padding: 0.25rem;
+    display: flex;
+    gap: 0.5rem;
+    background-color: var(--shape-button);
+    border-radius: 8px;
+    border: 1px solid var(--input-stroke);
+    & img {
+      border-radius: 0.25rem;
+    }
+
+    & label {
+      color: var(--text-heading);
+      font: var(--text-sm);
+    }
+
+    &:hover,
+    &:focus-within,
+    &:has(:checked) {
+      border: 1px solid var(--brand-light);
+    }
+  }
+}
